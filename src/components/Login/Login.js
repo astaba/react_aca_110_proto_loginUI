@@ -40,7 +40,8 @@ const Login = () => {
   const { isValid: emailStatus } = emailState;
   const { isValid: passwordStatus } = passwordState;
   /**
-   * (1) Debalancing (a kind of event throttling lower on the call stack)
+   * (1) Debouncing is a programming practice that limits the rate at
+   * which a function can fire (a kind of event throttling lower on the call stack)
    * (2) Since formIsValid depends on other states, the best practice
    * is to update it within useEffect to make sure it is always
    * updated with the most recent states.
